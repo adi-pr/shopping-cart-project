@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        '1': '1',
+      },
+      borderRadius: {
+        '1/2': '50%',
+
+      }
+    },
   },
   plugins: [],
 }

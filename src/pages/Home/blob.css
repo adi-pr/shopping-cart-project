@@ -1,0 +1,30 @@
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+#blob {
+    translate: -50% -50%;
+    background: linear-gradient(
+        to right,
+        #EA4B30,
+        #C266B3
+    );
+    animation: rotate 20s infinite;
+}
+
+#blur {
+    backdrop-filter: blur(200px);
+}
+#blur2 {
+    backdrop-filter: blur(200px);
+}

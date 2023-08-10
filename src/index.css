@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 
 body {
+    overflow-x: hidden; 
     color: white;
     background-color: black;
 }

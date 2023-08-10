@@ -2,10 +2,10 @@ import "./index.css"
 
 const Hero = () => {
     return (
-        <div className="hero-container w-full h-screen bg-no-repeat bg-top">
+        <div className="absolute hero-container w-full h-screen bg-no-repeat bg-top z-40 overflow-hidden">
             <div>
                 <img
-                    className="absolute w-full h-auto mt-14"
+                    className="absolute w-full h-screen opacity-50"
                     src="src/assets/Hero.jpg"
                     alt="Hero Img" />
             </div>
