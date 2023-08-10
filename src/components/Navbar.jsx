@@ -3,7 +3,7 @@ import "./index.css"
 
 const Navbar = () => {
     return ( 
-        <nav className="fixed flex w-full z-20 m-1 p-14 text-white">
+        <nav className="fixed flex w-full z-20 top-0 py-14 px-40">
                 <div className="text-2xl">
                     <Link to="/">TechWare</Link>
                 </div>
@@ -15,7 +15,7 @@ const Navbar = () => {
                     <Link to="/about">About</Link>
                 </li>
                 <li className="px-5">
-                    <Link to="/contact">Contacts</Link>
+                    <Link to="/contact">Contact</Link>
                 </li>
             </ul>
         </nav>

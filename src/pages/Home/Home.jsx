@@ -1,10 +1,12 @@
 import Hero from "./Hero";
+import FeaturedProducts from "./FeaturedProducts";
 
 const HomePage = () => {
     return (
         <>
-            <div className="">
+            <div className="absolute w-full">
                 <Hero />
+                <FeaturedProducts />
             </div>
         </>
     );
