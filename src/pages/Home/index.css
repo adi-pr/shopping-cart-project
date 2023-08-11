@@ -1,0 +1,19 @@
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text {
+    opacity: 0;
+    animation: 1s ease 0s 1 slideInBottom;
+    animation-fill-mode: forwards;
+}
+
+.hero-text.delayed {
+    animation-delay: 500ms;
+}
