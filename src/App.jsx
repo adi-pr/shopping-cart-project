@@ -22,8 +22,8 @@ function App() {
   }, []);
 
   const navbarStyle = {
-    background: scrollTop > 100 ? '#000' : 'transparent',
-    transition: 'background 0.3s ease'
+    background: scrollTop > 80 ? '#000' : 'transparent',
+    transition: 'background 0.3s ease',
   };
 
   return (

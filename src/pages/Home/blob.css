@@ -28,3 +28,11 @@
 #blur2 {
     backdrop-filter: blur(200px);
 }
+
+@media (max-width: 1268px) {
+    #blob,
+    #blur,
+    #blur2 {
+        display: none;
+    }
+}
