@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import "./index.css"
 
-const Navbar = () => {
-
+const Navbar = ({ style }) => {
 
     return ( 
-        <nav id="navbar" className="fixed flex w-full top-0 py-10 px-40 z-50">
+        <nav id="navbar" className="fixed flex w-full top-0 py-10 px-40 z-50" style={style}>
                 <div className="text-2xl">
                     <Link to="/">TechWare</Link>
                 </div>
