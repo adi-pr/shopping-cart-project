@@ -7,7 +7,9 @@ const Hero = () => {
                 <img
                     className="absolute w-full h-screen opacity-50"
                     src="src/assets/Hero.jpg"
-                    alt="Hero Img" />
+                    alt="Hero Img" 
+                    loading="lazy"
+                    />
             </div>
             <div>
                 <div className="relative pt-40 pl-40 ml-1 mb-20 ">

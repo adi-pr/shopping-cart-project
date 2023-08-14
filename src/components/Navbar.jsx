@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import "./index.css"
 
 const Navbar = () => {
+
+
     return ( 
-        <nav className="fixed flex w-full top-0 py-14 px-40 z-50">
+        <nav id="navbar" className="fixed flex w-full top-0 py-10 px-40 z-50">
                 <div className="text-2xl">
                     <Link to="/">TechWare</Link>
                 </div>
