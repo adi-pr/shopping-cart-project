@@ -4,6 +4,9 @@ import HomePage from "./pages/Home/Home"
 import StorePage from "./pages/Store/Store"
 import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact"
+
+import CpuItemList from './data/cpuProduct';
+
 import { Route, Routes } from "react-router-dom"
 
 function App() {
@@ -28,11 +31,13 @@ function App() {
 
   return (
     <div>
-      <Navbar style={navbarStyle}/>
+      <Navbar style={navbarStyle} />
       <div className="container">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/store" element={<StorePage />} />
+          <Route path="/store" element={<StorePage />}>
+            <Route path="cpus" element={<CpuItemList />} />
+          </Route>
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
@@ -43,4 +48,3 @@ function App() {
 
 export default App
 
-  

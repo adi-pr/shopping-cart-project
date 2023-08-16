@@ -21,7 +21,7 @@ const CpuItemList = () => {
 
 export default CpuItemList;
 
-const Item = ({ key, brand, model, price, description, specs}) => {
+const Item = ({ brand, model, price, description, specs}) => {
     const { cores, threads, base_clock, max_turbo, cache, socket } = specs
 
     return ( 
