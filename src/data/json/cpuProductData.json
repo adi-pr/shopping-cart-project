@@ -1,0 +1,153 @@
+{
+    "pc_parts_cpu": [
+      {
+        "id": "CPU1",
+        "brand": "Intel",
+        "model": "Core i9-11900K",
+        "price": "$529.99",
+        "description": "11th Gen Intel Core i9 processor for high-performance computing.",
+        "specs": {
+          "cores": 8,
+          "threads": 16,
+          "base_clock": "3.5GHz",
+          "max_turbo": "5.3GHz",
+          "cache": "16MB SmartCache",
+          "socket": "LGA 1200"
+        }
+      },
+      {
+        "id": "CPU2",
+        "brand": "AMD",
+        "model": "Ryzen 9 5950X",
+        "price": "$749.99",
+        "description": "16-core AMD Ryzen processor for multitasking and gaming.",
+        "specs": {
+          "cores": 16,
+          "threads": 32,
+          "base_clock": "3.4GHz",
+          "max_boost": "4.9GHz",
+          "cache": "72MB GameCache",
+          "socket": "AM4"
+        }
+      },
+      {
+        "id": "CPU3",
+        "brand": "Intel",
+        "model": "Core i7-10700K",
+        "price": "$349.99",
+        "description": "10th Gen Intel Core i7 processor for high-performance computing.",
+        "specs": {
+          "cores": 8,
+          "threads": 16,
+          "base_clock": "3.8GHz",
+          "max_turbo": "5.1GHz",
+          "cache": "16MB SmartCache",
+          "socket": "LGA 1200"
+        }
+      },
+      {
+        "id": "CPU4",
+        "brand": "AMD",
+        "model": "Ryzen 7 5800X",
+        "price": "$449.99",
+        "description": "8-core AMD Ryzen processor for gaming and content creation.",
+        "specs": {
+          "cores": 8,
+          "threads": 16,
+          "base_clock": "3.8GHz",
+          "max_boost": "4.7GHz",
+          "cache": "32MB GameCache",
+          "socket": "AM4"
+        }
+      },
+      {
+        "id": "CPU5",
+        "brand": "Intel",
+        "model": "Core i5-11600K",
+        "price": "$269.99",
+        "description": "11th Gen Intel Core i5 processor for mainstream computing.",
+        "specs": {
+          "cores": 6,
+          "threads": 12,
+          "base_clock": "3.9GHz",
+          "max_turbo": "4.9GHz",
+          "cache": "12MB SmartCache",
+          "socket": "LGA 1200"
+        }
+      },
+      {
+        "id": "CPU6",
+        "brand": "AMD",
+        "model": "Ryzen 5 5600X",
+        "price": "$299.99",
+        "description": "6-core AMD Ryzen processor for gaming and multitasking.",
+        "specs": {
+          "cores": 6,
+          "threads": 12,
+          "base_clock": "3.7GHz",
+          "max_boost": "4.6GHz",
+          "cache": "35MB GameCache",
+          "socket": "AM4"
+        }
+      },
+      {
+        "id": "CPU7",
+        "brand": "Intel",
+        "model": "Core i3-10100",
+        "price": "$129.99",
+        "description": "10th Gen Intel Core i3 processor for budget computing.",
+        "specs": {
+          "cores": 4,
+          "threads": 8,
+          "base_clock": "3.6GHz",
+          "max_turbo": "4.3GHz",
+          "cache": "6MB SmartCache",
+          "socket": "LGA 1200"
+        }
+      },
+      {
+        "id": "CPU8",
+        "brand": "AMD",
+        "model": "Ryzen 3 3300X",
+        "price": "$149.99",
+        "description": "4-core AMD Ryzen processor for budget gaming.",
+        "specs": {
+          "cores": 4,
+          "threads": 8,
+          "base_clock": "3.8GHz",
+          "max_boost": "4.3GHz",
+          "cache": "18MB GameCache",
+          "socket": "AM4"
+        }
+      },
+      {
+        "id": "CPU9",
+        "brand": "Intel",
+        "model": "Pentium Gold G6400",
+        "price": "$69.99",
+        "description": "10th Gen Intel Pentium processor for basic computing tasks.",
+        "specs": {
+          "cores": 2,
+          "threads": 4,
+          "base_clock": "4.0GHz",
+          "cache": "4MB SmartCache",
+          "socket": "LGA 1200"
+        }
+      },
+      {
+        "id": "CPU10",
+        "brand": "AMD",
+        "model": "Athlon 3000G",
+        "price": "$59.99",
+        "description": "Dual-core AMD Athlon processor for entry-level systems.",
+        "specs": {
+          "cores": 2,
+          "threads": 4,
+          "base_clock": "3.5GHz",
+          "cache": "192KB L1 Cache, 1MB L2 Cache",
+          "socket": "AM4"
+        }
+      }
+    ]
+  }
+  
