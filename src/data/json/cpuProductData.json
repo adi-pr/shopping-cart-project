@@ -29,7 +29,8 @@
           "max_boost": "4.9GHz",
           "cache": "72MB GameCache",
           "socket": "AM4"
-        }
+        },
+        "imgURL": "https://imgs.search.brave.com/Ye81tbiRkm5ZEMZgw8Bfi-8qTXZVOcsGYbwmb5yuuUY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/b3ZlcmNsb2NrZXJz/LmNvLnVrL2ltYWdl/cy9DUC0zQzktQU0v/NTI4MWQ5YjgxYTdj/Mjg4OThmODM2ODA0/MDBiYTMxNzkuanBn"
       },
       {
         "id": "CPU3",
@@ -44,7 +45,8 @@
           "max_turbo": "5.1GHz",
           "cache": "16MB SmartCache",
           "socket": "LGA 1200"
-        }
+        },
+        "imgURL": "https://imgs.search.brave.com/4z-X_3lQAyugDfuZRmu52pCsMtd4c-2etghiIVe2gYk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jMS5u/ZXdlZ2dpbWFnZXMu/Y29tL1Byb2R1Y3RJ/bWFnZS8xOS0xMTgt/MTIzLVYwMy5qcGc"
       },
       {
         "id": "CPU4",
@@ -59,7 +61,8 @@
           "max_boost": "4.7GHz",
           "cache": "32MB GameCache",
           "socket": "AM4"
-        }
+        },
+        "imgURL": "https://imgs.search.brave.com/wypEvJ6BmckLQne80PI-aOJHoOozc7BKOYqfP60Riig/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFEWUxveU5SV0wu/anBn"
       },
       {
         "id": "CPU5",
@@ -74,7 +77,8 @@
           "max_turbo": "4.9GHz",
           "cache": "12MB SmartCache",
           "socket": "LGA 1200"
-        }
+        },
+        "imgURL": "https://imgs.search.brave.com/57bCbRZCHMsTTLkV3d5Pm3_l800hIkcvcHhJuPdGvc4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/eC1rb20ucGwvaS9z/ZXR1cC9pbWFnZXMv/cHJvZC9iaWcvcHJv/ZHVjdC1uZXctYmln/LCwyMDIxLzMvcHJf/MjAyMV8zXzE1Xzlf/MjRfMzJfODE2XzAw/LmpwZw"
       },
       {
         "id": "CPU6",
@@ -89,7 +93,8 @@
           "max_boost": "4.6GHz",
           "cache": "35MB GameCache",
           "socket": "AM4"
-        }
+        },
+        "imgURL": "https://imgs.search.brave.com/IEvflA9Fr15TDWsmBQo9MVoBLi3ZMGJk9C0ZEjHsxwI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjF2R1FOVUVzR0wu/anBn"
       },
       {
         "id": "CPU7",
@@ -104,7 +109,8 @@
           "max_turbo": "4.3GHz",
           "cache": "6MB SmartCache",
           "socket": "LGA 1200"
-        }
+        },
+        "imgURL": "https://imgs.search.brave.com/SNSQLRBaSlBcrai9x1JtTmlVnZAeTulDfg05VSwtzPw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNjc2/YmMwMTQtMjQ1Ny00/ZWU4LWJiMDUtNDhm/YjIyZWE1NGE1LmVi/ZWMxOGJiYWUzNDQ1/YzVmODhlNGUyNjM3/NjFiZWEyLmpwZWc_/b2RuSGVpZ2h0PTYx/MiZvZG5XaWR0aD02/MTImb2RuQmc9RkZG/RkZG"
       },
       {
         "id": "CPU8",
@@ -119,7 +125,8 @@
           "max_boost": "4.3GHz",
           "cache": "18MB GameCache",
           "socket": "AM4"
-        }
+        },
+        "imgURL": "https://imgs.search.brave.com/bnimVMcwkc1hr-dvpyTceJupcBHMgMfyzQRse09WPog/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFxSmtDSDRFbkwu/anBn"
       },
       {
         "id": "CPU9",
@@ -133,7 +140,8 @@
           "base_clock": "4.0GHz",
           "cache": "4MB SmartCache",
           "socket": "LGA 1200"
-        }
+        },
+        "imgURL": "https://imgs.search.brave.com/9EvBVYZSXBpJgnfFz-JEjHT4zb_L799H5PeYARD2A28/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjExa2RZOEdsdkwu/anBn"
       },
       {
         "id": "CPU10",
@@ -147,7 +155,8 @@
           "base_clock": "3.5GHz",
           "cache": "192KB L1 Cache, 1MB L2 Cache",
           "socket": "AM4"
-        }
+        },
+        "imgURL": "https://imgs.search.brave.com/IztgtmKQ-NWk0e-IUbwT6h26oHhjuVDveRnvzPdcriI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/bWRjb21wdXRlcnMu/aW4vaW1hZ2UvY2Fj/aGUvY2F0YWxvZy9w/cm9jZXNzb3IvYW1k/L2F0aGxvbi0zMDAw/Zy9hdGhsb24tMzAw/MGctaW1hZ2UtbWFp/bi02MDB4NjAwLmpw/Zw"
       }
     ]
   }
