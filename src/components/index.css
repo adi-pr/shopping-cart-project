@@ -2,7 +2,7 @@ ul a {
   position: relative;
 }
 
-ul a::before {
+nav ul a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -16,7 +16,7 @@ ul a::before {
   transition: transform 0.3s ease-in-out;
 }
 
-ul a:hover::before {
+nav ul a:hover::before {
   transform-origin: center;
   transform: scaleX(1);
 }

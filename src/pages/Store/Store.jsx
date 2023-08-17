@@ -4,9 +4,11 @@ import './index.css'
 
 const StorePage = () => {
     return (
-        <div id="store" className="mt-32 grid">
+        <div id="store" className="mt-32 grid ">
             <Sidebar />
-            <Outlet />
+            <div className="pt-8 pr-8 mb-8">
+                <Outlet />
+            </div>
         </div>
     );
 }

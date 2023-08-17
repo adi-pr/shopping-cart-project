@@ -13,7 +13,8 @@
           "max_turbo": "5.3GHz",
           "cache": "16MB SmartCache",
           "socket": "LGA 1200"
-        }
+        },
+        "imgURL": "https://m.media-amazon.com/images/I/71diouNMRHL._AC_SX679_.jpg"
       },
       {
         "id": "CPU2",

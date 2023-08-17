@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Sidebar = () => {
     return ( 
-        <div className="flex p-8">
+        <div className="flex p-8 ">
             <ul className="flex flex-col gap-4">
                 <Link to="cpus">
                     <li>CPU</li>
