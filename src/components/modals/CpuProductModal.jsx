@@ -1,10 +1,25 @@
+import { motion as m } from "framer-motion";
 
 const Modal = ({ closeModal, description, specs }) => {
     const { cores, threads, base_clock, max_turbo, cache, socket } = specs
 
     return (
         <>
-            <section className="relative flex flex-col h-full gap-3">
+            <m.section
+                className="relative flex flex-col h-full gap-3"
+                initial={{
+                    opacity: 0
+                }}
+                animate={{
+                    opacity: 1
+                }} 
+                transition={{
+                    duration: 0.75
+                }}
+                exit={{
+                    opacity: 0,
+                }}
+            >
                 <div className="flex flex-col gap-5">
                     <div className="p-3 bg-gray-700 rounded-lg">
                         <h3>Description</h3>
@@ -26,16 +41,16 @@ const Modal = ({ closeModal, description, specs }) => {
                         </ol>
                     </div>
                 </div>
-                    <div>
-                        <button onClick={closeModal}>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="32" viewBox="0 -960 960 960" width="32"><path d="m274-450 248 248-42 42-320-320 320-320 42 42-248 248h526v60H274Z" /></svg>
-                        </button>
-                        <button>
+                <div>
+                    <button onClick={closeModal}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="32" viewBox="0 -960 960 960" width="32"><path d="m274-450 248 248-42 42-320-320 320-320 42 42-248 248h526v60H274Z" /></svg>
+                    </button>
+                    <button>
 
-                        </button>
-                    </div>
-             
-            </section>
+                    </button>
+                </div>
+
+            </m.section>
         </>
     );
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion as m } from 'framer-motion';
 import data from "./json/cpuProductData.json"
 
 import Modal from "../components/modals/CpuProductModal";
@@ -43,7 +44,20 @@ const Item = ({ brand, model, price, description, specs, imgURL }) => {
                 {isOpen ? (
                     <Modal closeModal={closeModal} description={description} specs={specs} />
                 ) : (
-                    <>
+                    <m.div
+                        initial={{
+                            opacity: 0
+                        }}
+                        animate={{
+                            opacity: 1
+                        }}
+                        transition={{
+                            duration: 0.75
+                        }}
+                        exit={{
+                            opacity: 0,
+                        }}
+                    >
                         <div className="relative">
                             <div className="relative p-2 bg-white rounded-xl border-dashed">
                                 <img
@@ -72,7 +86,7 @@ const Item = ({ brand, model, price, description, specs, imgURL }) => {
                                 More
                             </button>
                         </div>
-                    </>
+                    </m.div>
                 )}
             </div>
         </>
