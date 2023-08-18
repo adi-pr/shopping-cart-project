@@ -13,7 +13,7 @@ const Modal = ({ closeModal, description, specs }) => {
                             {description}
                         </p>
                     </div>
-                    <div className="p-3 bg-gray-700 rounded-lg">
+                    <div className="bg-gray-700 rounded-lg">
                         <h3>Specs</h3>
                         <hr />
                         <ol className="mt-2 list-disc ml-5">
