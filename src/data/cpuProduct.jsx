@@ -1,4 +1,7 @@
+import { useState } from 'react';
 import data from "./json/cpuProductData.json"
+
+import Modal from "../components/modals/CpuProductModal";
 
 const CpuItemList = () => {
     return (
@@ -13,7 +16,7 @@ const CpuItemList = () => {
                         description={item.description}
                         specs={item.specs}
                         imgURL={item.imgURL}
-                        />
+                    />
                 ))
             }
         </div>
@@ -22,26 +25,56 @@ const CpuItemList = () => {
 
 export default CpuItemList;
 
-const Item = ({ brand, model, price, description, specs, imgURL}) => {
-    const { cores, threads, base_clock, max_turbo, cache, socket } = specs
+const Item = ({ brand, model, price, description, specs, imgURL }) => {
+    const [isOpen, setIsOpen] = useState(false)
 
-    return ( 
-        <div className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-5 w-72">
-            <div className="relative">
-                <img src={imgURL} alt="" />
-                <div className="mt-5">
-                    <p className="text-2xl">
-                        {model}
-                    </p>
-                    <p className="text-gray-400 mt-2">
-                        {brand}
-                    </p>
+    const openModal = () => {
+        setIsOpen(true)
+    }
 
-                    <p className="absolute italic bottom-0 right-0 ">
-                        {price}
-                    </p>
-                </div>
+    const closeModal = () => {
+        setIsOpen(false)
+    }
+
+    return (
+        <>
+            <div className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-5 w-72">
+
+                {isOpen ? (
+                    <Modal closeModal={closeModal} specs={specs} />
+                ) : (
+                    <>
+                        <div className="relative">
+                            <div className="relative p-2 bg-white rounded-xl border-dashed">
+                                <img
+                                    className="h-64 w-auto"
+                                    src={imgURL}
+                                    alt={model}
+                                />
+                            </div>
+                            <div className="mt-5">
+                                <p className="text-2xl">
+                                    {model}
+                                </p>
+                                <p className="text-gray-400 mt-2">
+                                    {brand}
+                                </p>
+                                <p className="absolute italic bottom-0 right-0 ">
+                                    {price}
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <button
+                                className='pt-3'
+                                onClick={openModal}
+                            >
+                                More
+                            </button>
+                        </div>
+                    </>
+                )}
             </div>
-        </div>
-     );
+        </>
+    );
 }
