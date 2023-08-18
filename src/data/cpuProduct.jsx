@@ -41,7 +41,7 @@ const Item = ({ brand, model, price, description, specs, imgURL }) => {
             <div className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-5 w-72">
 
                 {isOpen ? (
-                    <Modal closeModal={closeModal} specs={specs} />
+                    <Modal closeModal={closeModal} description={description} specs={specs} />
                 ) : (
                     <>
                         <div className="relative">
