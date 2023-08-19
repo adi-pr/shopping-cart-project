@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "../index.css"
 
-const Button = ({ content }) => {
+const Button = ({ content, to }) => {
     return (
-        <Link to="/store">
+        <Link to={to}>
             <button className="button">
                 <span className="button_lg">
                     <span className="button_sl"></span>
