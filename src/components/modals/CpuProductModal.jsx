@@ -1,6 +1,6 @@
 import { motion as m } from "framer-motion";
 
-const Modal = ({ closeModal, description, specs }) => {
+const Modal = ({ toggleModal, description, specs }) => {
     const { cores, threads, base_clock, max_turbo, cache, socket } = specs
 
     return (
@@ -42,7 +42,7 @@ const Modal = ({ closeModal, description, specs }) => {
                     </div>
                 </div>
                 <div>
-                    <button onClick={closeModal}>
+                    <button onClick={toggleModal}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="32" viewBox="0 -960 960 960" width="32"><path d="m274-450 248 248-42 42-320-320 320-320 42 42-248 248h526v60H274Z" /></svg>
                     </button>
                 </div>

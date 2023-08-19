@@ -31,12 +31,16 @@ const Item = ({ brand, model, price, description, specs, imgURL }) => {
 
     const toggleModal = () => {
         setIsOpen(!isOpen)
+        console.log("🚀 ~ file: cpuProduct.jsx:34 ~ toggleModal ~ isOpen:", isOpen)
     }
 
+    const handleAddToCart = () => {
+        console.log(`Added Item ${model} to cart`);
+    }
 
     return (
         <>
-            <div className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-5 w-72 cursor-pointer" onClick={toggleModal}>
+            <div className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-5 w-72 cursor-pointer">
 
                 {isOpen ? (
                     <Modal toggleModal={toggleModal} description={description} specs={specs} />
@@ -85,7 +89,9 @@ const Item = ({ brand, model, price, description, specs, imgURL }) => {
                                         <p>
                                             <i>{price}</i>
                                         </p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="30" viewBox="0 -960 960 960" width="30"><path d="M465-613v-123H341v-60h124v-123h60v123h123v60H525v123h-60ZM289.788-80Q260-80 239-101.212q-21-21.213-21-51Q218-182 239.212-203q21.213-21 51-21Q320-224 341-202.788q21 21.213 21 51Q362-122 340.788-101q-21.213 21-51 21Zm404 0Q664-80 643-101.212q-21-21.213-21-51Q622-182 643.212-203q21.213-21 51-21Q724-224 745-202.788q21 21.213 21 51Q766-122 744.788-101q-21.213 21-51 21ZM290-287q-42 0-61.5-34t.5-69l61-111-150-319H62v-60h116l170 364h292l156-280 52 28-153 277q-9.362 16.667-24.681 25.833Q655-456 634-456H334l-62 109h494v60H290Z" /></svg>
+                                        <button onClick={handleAddToCart}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="30" viewBox="0 -960 960 960" width="30"><path d="M465-613v-123H341v-60h124v-123h60v123h123v60H525v123h-60ZM289.788-80Q260-80 239-101.212q-21-21.213-21-51Q218-182 239.212-203q21.213-21 51-21Q320-224 341-202.788q21 21.213 21 51Q362-122 340.788-101q-21.213 21-51 21Zm404 0Q664-80 643-101.212q-21-21.213-21-51Q622-182 643.212-203q21.213-21 51-21Q724-224 745-202.788q21 21.213 21 51Q766-122 744.788-101q-21.213 21-51 21ZM290-287q-42 0-61.5-34t.5-69l61-111-150-319H62v-60h116l170 364h292l156-280 52 28-153 277q-9.362 16.667-24.681 25.833Q655-456 634-456H334l-62 109h494v60H290Z" /></svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
