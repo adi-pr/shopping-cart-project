@@ -26,7 +26,7 @@ const FeaturedProducts = () => {
                                 <p className="text-2xl">
                                     Cutting-Edge Processors
                                 </p>
-                                <Button content={"Shop Now"} />
+                                <Button content={"Shop Now"} to={"/store/cpus"}/>
                             </div>
                         </div>
                         <div className="w-96 mx-12">
@@ -38,7 +38,7 @@ const FeaturedProducts = () => {
                             <p className="text-2xl pt-5">
                                 High-Performance Graphics Cards
                             </p>
-                            <Button content={"Shop Now"} />
+                            <Button content={"Shop Now"} to={"/store/cpus"}/>
                         </div>
                         <div className="w-96">
                             <img
@@ -50,7 +50,7 @@ const FeaturedProducts = () => {
                             <p className="text-2xl pt-6">
                                 Build Your Custom PC Today
                             </p>
-                            <Button content={"Shop Now"} />
+                            <Button content={"Shop Now"} to={"/store/cpus"}/>
                         </div>
                     </div>
                 </div>
