@@ -6,7 +6,7 @@ const Modal = ({ closeModal, description, specs }) => {
     return (
         <>
             <m.section
-                className="relative flex flex-col h-full gap-3"
+                className="relative flex flex-col h-full gap-3 "
                 initial={{
                     opacity: 0
                 }}
@@ -36,7 +36,7 @@ const Modal = ({ closeModal, description, specs }) => {
                             <li>Threads: {threads}</li>
                             <li>Base Clock: {base_clock}</li>
                             <li>Max Clock: {max_turbo}</li>
-                            <li>Cache: {cache}</li>
+                            <li>Cache: {cache}</li>  
                             <li>Socket: {socket}</li>
                         </ol>
                     </div>
@@ -44,9 +44,6 @@ const Modal = ({ closeModal, description, specs }) => {
                 <div>
                     <button onClick={closeModal}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="32" viewBox="0 -960 960 960" width="32"><path d="m274-450 248 248-42 42-320-320 320-320 42 42-248 248h526v60H274Z" /></svg>
-                    </button>
-                    <button>
-
                     </button>
                 </div>
 
