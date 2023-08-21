@@ -1,9 +1,11 @@
-import CpuItemList from "../../data/cpuProduct";
+import CpuItemList from "../../data/CpuProduct";
+import CpuCoolerItemList from "../../data/CpuCoolerProduct";
 
 const AllProducts = () => {
     return ( 
-        <div>
+        <div >
             <CpuItemList />
+            <CpuCoolerItemList />
         </div>
      );
 }
