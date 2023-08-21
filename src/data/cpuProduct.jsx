@@ -40,7 +40,7 @@ const Item = ({ brand, model, price, description, specs, imgURL }) => {
 
     return (
         <>
-            <div className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-5 w-72 cursor-pointer">
+            <div className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-5 w-72">
 
                 {isOpen ? (
                     <Modal toggleModal={toggleModal} description={description} specs={specs} />

@@ -5,6 +5,7 @@ import StorePage from "./pages/Store/Store"
 import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact"
 
+import AllProducts from './pages/Store/AllProducts';
 import CpuItemList from './data/cpuProduct';
 
 import { Route, Routes } from "react-router-dom"
@@ -36,6 +37,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/store" element={<StorePage />}>
+            <Route index element={<AllProducts />} />
             <Route path="cpus" element={<CpuItemList />} />
           </Route>
           <Route path="/about" element={<About />} />
