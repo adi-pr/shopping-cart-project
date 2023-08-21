@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion as m } from 'framer-motion';
-import data from "./json/cpuProductData.json"
+import data from "./json/cpuProductData"
+import { useCart } from '../utils/CartContext';
 
 import Modal from "../components/modals/CpuProductModal";
 
@@ -11,6 +12,7 @@ const CpuItemList = () => {
                 data.pc_parts_cpu.map(item => (
                     <Item
                         key={item.id}
+                        id={item.id}
                         brand={item.brand}
                         model={item.model}
                         price={item.price}
@@ -26,8 +28,14 @@ const CpuItemList = () => {
 
 export default CpuItemList;
 
-const Item = ({ brand, model, price, description, specs, imgURL }) => {
+const Item = ({ id, brand, model, price, description, specs, imgURL }) => {
     const [isOpen, setIsOpen] = useState(false)
+    const { cart, setCart } = useCart();
+
+    useEffect(() => {
+    console.log("🚀 ~ file: cpuProduct.jsx:34 ~ Item ~ cart:", cart)
+    }, [cart])
+    
 
     const toggleModal = () => {
         setIsOpen(!isOpen)
@@ -35,7 +43,35 @@ const Item = ({ brand, model, price, description, specs, imgURL }) => {
     }
 
     const handleAddToCart = () => {
-        console.log(`Added Item ${model} to cart`);
+        const updatedCart = [...cart.items]
+
+        const existingItemIndex = updatedCart.findIndex(item => item.id === id)
+
+        if (existingItemIndex !== -1) {
+            updatedCart[existingItemIndex].quantity += 1
+        } else {
+            updatedCart.push({
+                id,
+                brand,
+                model,
+                price,
+                imgURL,
+                quantity: 1
+            })
+        }
+
+        const updatedTotalItems = cart.totalItems + 1
+        const updatedTotalPrice = cart.totalPrice + price
+        
+        console.log("🚀 ~ file: cpuProduct.jsx:65 ~ handleAddToCart ~ updatedTotalPrice:", updatedTotalPrice)
+
+        setCart({
+            items: updatedCart,
+            totalItems: updatedTotalItems,
+            totalPrice: updatedTotalPrice,
+        })
+
+        console.log(`Added Item ${id} to cart`);
     }
 
     return (
