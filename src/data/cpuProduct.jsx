@@ -31,9 +31,6 @@ export default CpuItemList;
 const Item = ({ id, brand, model, price, description, specs, imgURL }) => {
     const [isOpen, setIsOpen] = useState(false)
     const { cart, setCart } = useCart();
-    
-    console.log("🚀 ~ file: cpuProduct.jsx:34 ~ Item ~ cart:", cart)
-
 
     const toggleModal = () => {
         setIsOpen(!isOpen)
@@ -61,8 +58,6 @@ const Item = ({ id, brand, model, price, description, specs, imgURL }) => {
         const updatedTotalItems = cart.totalItems + 1
         const updatedTotalPrice = cart.totalPrice + price
         
-        console.log("🚀 ~ file: cpuProduct.jsx:65 ~ handleAddToCart ~ updatedTotalPrice:", updatedTotalPrice)
-
         setCart({
             items: updatedCart,
             totalItems: updatedTotalItems,
@@ -130,7 +125,6 @@ const Item = ({ id, brand, model, price, description, specs, imgURL }) => {
                                 </div>
                             </div>
                         </div>
-
                     </m.div>
                 )}
             </div>
