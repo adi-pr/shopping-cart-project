@@ -4,7 +4,7 @@
         "id": "CPU1",
         "brand": "Intel",
         "model": "Core i9-11900K",
-        "price": "$529.99",
+        "price": 529.99,
         "description": "11th Gen Intel Core i9 processor for high-performance computing.",
         "specs": {
           "cores": 8,
@@ -20,7 +20,7 @@
         "id": "CPU2",
         "brand": "AMD",
         "model": "Ryzen 9 5950X",
-        "price": "$749.99",
+        "price": 749.99,
         "description": "16-core AMD Ryzen processor for multitasking and gaming.",
         "specs": {
           "cores": 16,
@@ -36,7 +36,7 @@
         "id": "CPU3",
         "brand": "Intel",
         "model": "Core i7-10700K",
-        "price": "$349.99",
+        "price": 349.99,
         "description": "10th Gen Intel Core i7 processor for high-performance computing.",
         "specs": {
           "cores": 8,
@@ -52,7 +52,7 @@
         "id": "CPU4",
         "brand": "AMD",
         "model": "Ryzen 7 5800X",
-        "price": "$449.99",
+        "price": 449.99,
         "description": "8-core AMD Ryzen processor for gaming and content creation.",
         "specs": {
           "cores": 8,
@@ -68,7 +68,7 @@
         "id": "CPU5",
         "brand": "Intel",
         "model": "Core i5-11600K",
-        "price": "$269.99",
+        "price": 269.99,
         "description": "11th Gen Intel Core i5 processor for mainstream computing.",
         "specs": {
           "cores": 6,
@@ -84,7 +84,7 @@
         "id": "CPU6",
         "brand": "AMD",
         "model": "Ryzen 5 5600X",
-        "price": "$299.99",
+        "price": 299.99,
         "description": "6-core AMD Ryzen processor for gaming and multitasking.",
         "specs": {
           "cores": 6,
@@ -100,7 +100,7 @@
         "id": "CPU7",
         "brand": "Intel",
         "model": "Core i3-10100",
-        "price": "$129.99",
+        "price": 129.99,
         "description": "10th Gen Intel Core i3 processor for budget computing.",
         "specs": {
           "cores": 4,
@@ -116,7 +116,7 @@
         "id": "CPU8",
         "brand": "AMD",
         "model": "Ryzen 3 3300X",
-        "price": "$149.99",
+        "price": 149.99,
         "description": "4-core AMD Ryzen processor for budget gaming.",
         "specs": {
           "cores": 4,
@@ -132,7 +132,7 @@
         "id": "CPU9",
         "brand": "Intel",
         "model": "Pentium Gold G6400",
-        "price": "$69.99",
+        "price": 69.99,
         "description": "10th Gen Intel Pentium processor for basic computing tasks.",
         "specs": {
           "cores": 2,
@@ -147,7 +147,7 @@
         "id": "CPU10",
         "brand": "AMD",
         "model": "Athlon 3000G",
-        "price": "$59.99",
+        "price": 59.99,
         "description": "Dual-core AMD Athlon processor for entry-level systems.",
         "specs": {
           "cores": 2,
