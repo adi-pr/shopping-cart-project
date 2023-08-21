@@ -31,11 +31,9 @@ export default CpuItemList;
 const Item = ({ id, brand, model, price, description, specs, imgURL }) => {
     const [isOpen, setIsOpen] = useState(false)
     const { cart, setCart } = useCart();
-
-    useEffect(() => {
-    console.log("🚀 ~ file: cpuProduct.jsx:34 ~ Item ~ cart:", cart)
-    }, [cart])
     
+    console.log("🚀 ~ file: cpuProduct.jsx:34 ~ Item ~ cart:", cart)
+
 
     const toggleModal = () => {
         setIsOpen(!isOpen)
