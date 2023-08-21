@@ -1,0 +1,120 @@
+{
+    "pc_parts_cpu_cooler": [
+      {
+        "id": "Cooler1",
+        "brand": "Noctua",
+        "model": "NH-D15",
+        "price": "$99.99",
+        "description": "High-performance dual-tower CPU cooler for overclocking.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "Air Cooler",
+        "cfm": 82.5,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/ca16d42d3e187f96c728c09183df14a7.med.256p.jpg"
+      },
+      {
+        "id": "Cooler2",
+        "brand": "NZXT",
+        "model": "Kraken X62",
+        "price": "$149.99",
+        "description": "All-in-one liquid CPU cooler with customizable RGB lighting.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "AIO Liquid Cooler",
+        "size": "280mm",
+        "cfm": 73.11,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/88a46cbc0fb9422db89ab2d7c1b81e88.256p.jpg"
+      },
+      {
+        "id": "Cooler3",
+        "brand": "Corsair",
+        "model": "H100i RGB Platinum",
+        "price": "$129.99",
+        "description": "240mm AIO liquid cooler with RGB lighting and powerful cooling.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "AIO Liquid Cooler",
+        "size": "240mm",
+        "cfm": 75.0,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/623066a73a9f4feafdea3ae659f80705.256p.jpg"
+      },
+      {
+        "id": "Cooler4",
+        "brand": "Cooler Master",
+        "model": "Hyper 212 RGB",
+        "price": "$49.99",
+        "description": "Popular air cooler with RGB lighting and balanced performance.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "Air Cooler",
+        "cfm": 66.3,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/16dca5ad82a279a9232b0cbcb6ed71bf.256p.jpg"
+      },
+      {
+        "id": "Cooler5",
+        "brand": "Arctic",
+        "model": "Freezer 34 eSports DUO",
+        "price": "$46.89",
+        "description": "Dual-fan air cooler with a sleek design and efficient cooling.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "Air Cooler",
+        "cfm": 74.0,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/5a60d6fcd8af3ee7b1d747d92c6a487d.256p.jpg"
+      },
+      {
+        "id": "Cooler6",
+        "brand": "Deepcool",
+        "model": "Castle 360EX",
+        "price": "$169.99",
+        "description": "360mm AIO liquid cooler with RGB lighting and high cooling capacity.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "AIO Liquid Cooler",
+        "size": "360mm",
+        "cfm": 84.25,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/fce8bca6c1e311901daf2a68087b694d.256p.jpg"
+      },
+      {
+        "id": "Cooler7",
+        "brand": "Be Quiet!",
+        "model": "Dark Rock Pro 4",
+        "price": "$89.99",
+        "description": "Dual-tower air cooler with silent operation and impressive performance.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "Air Cooler",
+        "cfm": 50.5,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/8ab57dc3c0eb346c72ef7a2405e31227.256p.jpg"
+      },
+      {
+        "id": "Cooler8",
+        "brand": "Corsair",
+        "model": "iCUE H150i RGB Pro XT",
+        "price": "$179.99",
+        "description": "360mm AIO liquid cooler with RGB lighting and powerful cooling.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "AIO Liquid Cooler",
+        "size": "360mm",
+        "cfm": 47.3,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/f1108a195027ab71953f5b9b1687db2a.256p.jpg"
+      },
+      {
+        "id": "Cooler9",
+        "brand": "Cooler Master",
+        "model": "Hyper 212 Black Edition",
+        "price": "$44.99",
+        "description": "Classic air cooler with a sleek black design and balanced performance.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "Air Cooler",
+        "cfm": 42.4,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/b45763abe7a0517129d3c0e026d0370d.256p.jpg"
+      },
+      {
+        "id": "Cooler10",
+        "brand": "NZXT",
+        "model": "Kraken Z63",
+        "price": "$229.99",
+        "description": "280mm AIO liquid cooler with customizable LCD display and RGB lighting.",
+        "compatibility": "Intel LGA115x, LGA20xx; AMD AM4",
+        "type": "AIO Liquid Cooler",
+        "size": "280mm",
+        "cfm": 98.17,
+        "image_url": "https://cdna.pcpartpicker.com/static/forever/images/product/ac552283fdffa791733145916bb359c4.256p.jpg"
+      }
+    ]
+  }
+  
