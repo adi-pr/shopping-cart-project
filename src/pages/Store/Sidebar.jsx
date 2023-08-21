@@ -7,7 +7,9 @@ const Sidebar = () => {
                 <Link to="cpus">
                     <li>CPU</li>
                 </Link>
-                <li>CPU Cooler</li>
+                <Link to="cpu coolers">
+                    <li>CPU Cooler</li>
+                </Link>
                 <li>Motherboard</li>
                 <li>Memory</li>
                 <li>Storage</li>
