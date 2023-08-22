@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import data from "./json/cpuCoolerProductData.json"
 import { useCart } from '../utils/CartContext';
-
+import PropTypes from 'prop-types'
 import { motion as m } from 'framer-motion';
 
 const CpuCoolerItemList = () => {
@@ -56,6 +56,7 @@ const Item = ({ id, brand, model, price, description, compatibility, type, cfm, 
             <div className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-5 w-72">
 
                 {isOpen ? (
+                    //! Add Modal Here
                     <div>Modal</div>
                 ) : (
                     <m.div
@@ -115,3 +116,17 @@ const Item = ({ id, brand, model, price, description, compatibility, type, cfm, 
         </>
     );
 }
+
+Item.propTypes = {
+    id: PropTypes.string.isRequired,
+    brand: PropTypes.string.isRequired,
+    model: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+    compatibility: PropTypes.string.isRequired,
+    cfm: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    specs: PropTypes.string.isRequired,
+    imgURL: PropTypes.string.isRequired,
+    addToCart: PropTypes.func.isRequired,
+  };

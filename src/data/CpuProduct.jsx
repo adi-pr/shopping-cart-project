@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types'
 import { motion as m } from 'framer-motion';
 import data from "./json/cpuProductData"
 import { useCart } from '../utils/CartContext';
@@ -112,3 +113,14 @@ const Item = ({ id, brand, model, price, description, specs, imgURL, addToCart }
         </>
     );
 }
+
+Item.propTypes = {
+    id: PropTypes.string.isRequired,
+    brand: PropTypes.string.isRequired,
+    model: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+    specs: PropTypes.string.isRequired,
+    imgURL: PropTypes.string.isRequired,
+    addToCart: PropTypes.func.isRequired,
+  };
