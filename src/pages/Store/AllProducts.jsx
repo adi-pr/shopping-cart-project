@@ -3,7 +3,7 @@ import CpuCoolerItemList from "../../data/CpuCoolerProduct";
 
 const AllProducts = () => {
     return ( 
-        <div >
+        <div className="flex flex-wrap gap-y-10 gap-5" >
             <CpuItemList />
             <CpuCoolerItemList />
         </div>

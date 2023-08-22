@@ -10,7 +10,7 @@ const StorePage = () => {
         <CartProvider>
             <div id="store" className="mt-32 grid ">
                 <Sidebar />
-                <div className="pt-8 pr-8 mb-8">
+                <div className="pt-8 pr-8 mb-8 flex flex-wrap justify-between gap-5">
                     <Outlet />
                 </div>
             </div>

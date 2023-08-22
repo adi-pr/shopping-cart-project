@@ -7,7 +7,7 @@ import Modal from "../components/modals/CpuProductModal";
 
 const CpuItemList = () => {
     return (
-        <div className="flex flex-wrap gap-y-10 justify-between">
+        <>
             {
                 data.pc_parts_cpu.map(item => (
                     <Item
@@ -22,7 +22,7 @@ const CpuItemList = () => {
                     />
                 ))
             }
-        </div>
+        </>
     );
 }
 

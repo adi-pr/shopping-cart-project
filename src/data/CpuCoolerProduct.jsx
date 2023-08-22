@@ -6,7 +6,7 @@ import { motion as m } from 'framer-motion';
 
 const CpuCoolerItemList = () => {
     return (
-        <div className="flex flex-wrap gap-y-10 justify-between">
+        <>
             {
                 data.pc_parts_cpu_cooler.map(item => (
                     <Item
@@ -23,7 +23,7 @@ const CpuCoolerItemList = () => {
                     />
                 ))
             }
-        </div>
+        </>
     );
 }
 
