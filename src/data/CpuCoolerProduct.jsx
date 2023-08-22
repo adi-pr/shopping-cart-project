@@ -5,6 +5,8 @@ import { useCart } from '../utils/CartContext';
 import { motion as m } from 'framer-motion';
 
 const CpuCoolerItemList = () => {
+    const { addToCart } = useCart()
+
     return (
         <>
             {
@@ -20,6 +22,7 @@ const CpuCoolerItemList = () => {
                         type={item.type}
                         cfm={item.cfm}
                         imgURL={item.imgURL}
+                        addToCart={addToCart}
                     />
                 ))
             }
@@ -29,10 +32,9 @@ const CpuCoolerItemList = () => {
 
 export default CpuCoolerItemList;
 
-const Item = ({ id, brand, model, price, description, compatibility, type, cfm, imgURL }) => {
-
+const Item = ({ id, brand, model, price, description, compatibility, type, cfm, imgURL, addToCart }) => {
     const [isOpen, setIsOpen] = useState(false)
-    const { cart, setCart } = useCart();
+    const { cart } = useCart();
     console.log("🚀 ~ file: CpuProduct.jsx:34 ~ Item ~ cart:", cart)
 
     const toggleModal = () => {
@@ -40,33 +42,13 @@ const Item = ({ id, brand, model, price, description, compatibility, type, cfm, 
     }
 
     const handleAddToCart = () => {
-        const updatedCart = [...cart.items]
-
-        const existingItemIndex = updatedCart.findIndex(item => item.id === id)
-
-        if (existingItemIndex !== -1) {
-            updatedCart[existingItemIndex].quantity += 1
-        } else {
-            updatedCart.push({
-                id,
-                brand,
-                model,
-                price,
-                imgURL,
-                quantity: 1
-            })
-        }
-
-        const updatedTotalItems = cart.totalItems + 1
-        const updatedTotalPrice = cart.totalPrice + price
-
-        setCart({
-            items: updatedCart,
-            totalItems: updatedTotalItems,
-            totalPrice: updatedTotalPrice,
+        addToCart({
+            id,
+            brand,
+            model,
+            price,
+            imgURL
         })
-
-        console.log(`Added Item ${id} to cart`);
     }
 
     return (

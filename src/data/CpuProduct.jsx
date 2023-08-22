@@ -6,6 +6,8 @@ import { useCart } from '../utils/CartContext';
 import Modal from "../components/modals/CpuProductModal";
 
 const CpuItemList = () => {
+    const { addToCart } = useCart()
+
     return (
         <>
             {
@@ -19,6 +21,7 @@ const CpuItemList = () => {
                         description={item.description}
                         specs={item.specs}
                         imgURL={item.imgURL}
+                        addToCart={addToCart}
                     />
                 ))
             }
@@ -28,43 +31,21 @@ const CpuItemList = () => {
 
 export default CpuItemList;
 
-const Item = ({ id, brand, model, price, description, specs, imgURL }) => {
+const Item = ({ id, brand, model, price, description, specs, imgURL, addToCart }) => {
     const [isOpen, setIsOpen] = useState(false)
-    const { cart, setCart } = useCart();
-    console.log("🚀 ~ file: CpuProduct.jsx:34 ~ Item ~ cart:", cart)
 
     const toggleModal = () => {
         setIsOpen(!isOpen)
     }
 
     const handleAddToCart = () => {
-        const updatedCart = [...cart.items]
-
-        const existingItemIndex = updatedCart.findIndex(item => item.id === id)
-
-        if (existingItemIndex !== -1) {
-            updatedCart[existingItemIndex].quantity += 1
-        } else {
-            updatedCart.push({
-                id,
-                brand,
-                model,
-                price,
-                imgURL,
-                quantity: 1
-            })
-        }
-
-        const updatedTotalItems = cart.totalItems + 1
-        const updatedTotalPrice = cart.totalPrice + price
-        
-        setCart({
-            items: updatedCart,
-            totalItems: updatedTotalItems,
-            totalPrice: updatedTotalPrice,
+        addToCart({
+            id,
+            brand,
+            model,
+            price,
+            imgURL
         })
-
-        console.log(`Added Item ${id} to cart`);
     }
 
     return (
