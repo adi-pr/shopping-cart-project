@@ -35,9 +35,6 @@ export default CpuCoolerItemList;
 
 const Item = ({ id, brand, model, price, description, compatibility, type, cfm, imgURL, addToCart }) => {
     const [isOpen, setIsOpen] = useState(false)
-    const { cart } = useCart();
-    console.log("🚀 ~ file: CpuProduct.jsx:34 ~ Item ~ cart:", cart)
-
     const toggleModal = () => {
         setIsOpen(!isOpen)
     }
@@ -124,9 +121,8 @@ Item.propTypes = {
     price: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired,
     compatibility: PropTypes.string.isRequired,
-    cfm: PropTypes.string.isRequired,
+    cfm: PropTypes.number.isRequired,
     type: PropTypes.string.isRequired,
-    specs: PropTypes.string.isRequired,
     imgURL: PropTypes.string.isRequired,
     addToCart: PropTypes.func.isRequired,
   };

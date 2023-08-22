@@ -120,7 +120,7 @@ Item.propTypes = {
     model: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired,
-    specs: PropTypes.string.isRequired,
+    specs: PropTypes.object.isRequired,
     imgURL: PropTypes.string.isRequired,
     addToCart: PropTypes.func.isRequired,
   };

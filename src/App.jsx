@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from "./components/Navbar"
 import RoutesConfig from './routes/routes';
+import { CartProvider } from './utils/CartContext';
 
 function App() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -23,12 +24,14 @@ function App() {
   };
 
   return (
-    <div>
-      <Navbar style={navbarStyle} />
-      <div className="container">
-        <RoutesConfig />
-      </div>
-    </div>
+    <>
+      <CartProvider>
+        <Navbar style={navbarStyle} />
+        <div className="container">
+          <RoutesConfig />
+        </div>
+      </CartProvider>
+    </>
   )
 }
 
