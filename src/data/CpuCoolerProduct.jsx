@@ -2,6 +2,7 @@ import { useState } from 'react';
 import data from "./json/cpuCoolerProductData.json"
 import { useCart } from '../utils/CartContext';
 import PropTypes from 'prop-types'
+import Modal from '../components/modals/CpuCoolerModal';
 import { motion as m } from 'framer-motion';
 
 const CpuCoolerItemList = () => {
@@ -56,8 +57,7 @@ const Item = ({ id, brand, model, price, description, compatibility, type, cfm, 
             <div className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-5 w-72">
 
                 {isOpen ? (
-                    //! Add Modal Here
-                    <div>Modal</div>
+                    <Modal toggleModal={toggleModal} description={description} compatibility={compatibility} type={type} cfm={cfm} />
                 ) : (
                     <m.div
                         initial={{
