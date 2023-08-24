@@ -76,6 +76,7 @@ const Item = ({ id, brand, model, price, description, specs, imgURL, addToCart }
                                     className="h-64 w-auto"
                                     src={imgURL}
                                     alt={model}
+                                    loading='lazy'
                                 />
                             </div>
                             <div className="mt-5 ">

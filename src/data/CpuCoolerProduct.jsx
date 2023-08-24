@@ -76,6 +76,7 @@ const Item = ({ id, brand, model, price, description, compatibility, type, cfm, 
                                     className="h-64 w-auto"
                                     src={imgURL}
                                     alt={model}
+                                    loading='lazy'
                                 />
                             </div>
                             <div className="mt-5 ">
