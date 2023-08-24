@@ -8,7 +8,6 @@ const Navbar = ({ style }) => {
     
     const toggleShowCart = () => {
         setIsOpen(!isOpen)
-        console.log("🚀 ~ file: Navbar.jsx:8 ~ Navbar ~ isOpen:", isOpen)
     }
 
 
