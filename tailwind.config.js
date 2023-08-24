@@ -12,6 +12,9 @@ export default {
       borderRadius: {
         '1/2': '50%',
 
+      },
+      zIndex: {
+        '60': '60',
       }
     },
   },
