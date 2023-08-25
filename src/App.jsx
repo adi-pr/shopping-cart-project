@@ -20,7 +20,7 @@ function App() {
 
   const navbarStyle = {
     background: scrollTop > 80 ? '#000' : 'transparent',
-    transition: 'background 0.3s ease',
+    transition: 'height 0.3s ease, background 0.3s ease',
   };
 
   return (
