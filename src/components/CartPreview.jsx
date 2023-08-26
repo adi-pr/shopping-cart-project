@@ -2,10 +2,13 @@ import { useEffect } from 'react';
 import { useCart } from "../utils/CartContext";
 import { motion as m } from 'framer-motion';
 import PropTypes from 'prop-types'
+import './cartPreview.css'
 
 
 const CartPreview = ({ toggleShowCart }) => {
     const { cart } = useCart()
+
+    const roundedPrice = cart.totalPrice.toFixed(2)
 
     useEffect(() => {
         document.body.style.overflowY = 'hidden'
@@ -39,18 +42,29 @@ const CartPreview = ({ toggleShowCart }) => {
         <>
             <div className='fixed top-0 left-0 w-full h-full bg-black opacity-50 flex justify-center items-center cursor-pointer z-60' onClick={toggleShowCart}/>
             <m.section
-                className="rounded-xl bg-neutral-900 fixed top-0 right-0 p-5 z-60 h-full overflow-x-hidden"
+                className="rounded-xl bg-neutral-900 w-96 fixed top-0 right-0 z-60 h-full overflow-x-hidden"
                 variants={container}
                 initial='initial'
                 animate='animate'
             >
                 <m.div
                     variants={item}
+                    className='flex flex-col'
                 >
+                    <div className='sticky flex justify-between p-5 mb-1 bg-neutral-800 top-0 z-60 w-full'>
+                        <p className='text-2xl'>
+                            {cart.totalItems} Items
+                        </p>
+                        <button onClick={toggleShowCart}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill='white' height="32" viewBox="0 -960 960 960" width="32"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+                        </button>
+                    </div>
                     <ItemList cart={cart} />
-                    <button onClick={toggleShowCart}>
-                        Close
-                    </button>
+                    <div className='sticky w-full bg-neutral-800 bottom-0 p-5'>
+                        <p>
+                            Total: ${roundedPrice}
+                        </p>
+                    </div>
                 </m.div>
             </m.section>
         </>
@@ -63,7 +77,7 @@ export default CartPreview;
 const ItemList = ({ cart }) => {
 
     return (
-        <div className='flex flex-col gap-3'>
+        <main className='flex flex-col gap-3 px-5 my-5 h-full'>
             {
                 cart.items.map(item => (
                     <Item
@@ -75,7 +89,7 @@ const ItemList = ({ cart }) => {
                     />
                 ))
             }
-        </div>
+        </main>
     )
 }
 
