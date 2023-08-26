@@ -42,7 +42,7 @@ const CartPreview = ({ toggleShowCart }) => {
         <>
             <div className='fixed top-0 left-0 w-full h-full bg-black opacity-50 flex justify-center items-center cursor-pointer z-60' onClick={toggleShowCart}/>
             <m.section
-                className="rounded-xl bg-neutral-900 w-96 fixed top-0 right-0 z-60 h-full overflow-x-hidden"
+                className="rounded-l-xl bg-neutral-900 w-96 fixed top-0 right-0 z-60 h-full overflow-x-hidden"
                 variants={container}
                 initial='initial'
                 animate='animate'
