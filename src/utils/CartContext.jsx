@@ -1,5 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import emptyShoppingCart from './emptyCart';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CartContext = createContext();
 
@@ -37,6 +39,11 @@ export const CartProvider = ({ children }) => {
       items: updatedCart,
       totalItems: updatedTotalItems,
       totalPrice: updatedTotalPrice,
+    });
+
+    toast.success(`Added ${item.brand} ${item.model} to the cart`, {
+      position: toast.POSITION.BOTTOM_RIGHT,
+      autoClose: 1500,
     });
 
     console.log(`Added Item ${item.id} to cart`);
