@@ -40,7 +40,7 @@ const CartPreview = ({ toggleShowCart }) => {
 
     return (
         <>
-            <div className='fixed top-0 left-0 w-full h-full bg-black opacity-50 flex justify-center items-center cursor-pointer z-60' onClick={toggleShowCart}/>
+            <div className='fixed top-0 left-0 w-full h-full bg-black opacity-50 flex justify-center items-center cursor-pointer z-60' onClick={toggleShowCart} />
             <m.section
                 className="rounded-l-xl bg-neutral-900 w-96 fixed top-0 right-0 z-60 h-full overflow-x-hidden"
                 variants={container}
@@ -56,7 +56,7 @@ const CartPreview = ({ toggleShowCart }) => {
                             {cart.totalItems} Items
                         </p>
                         <button onClick={toggleShowCart}>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill='white' height="32" viewBox="0 -960 960 960" width="32"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill='white' height="32" viewBox="0 -960 960 960" width="32"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" /></svg>
                         </button>
                     </div>
                     <ItemList cart={cart} />
@@ -75,6 +75,7 @@ export default CartPreview;
 
 
 const ItemList = ({ cart }) => {
+    const { removeFromCart } = useCart()
 
     return (
         <main className='flex flex-col gap-3 px-5 my-5 h-full'>
@@ -82,10 +83,12 @@ const ItemList = ({ cart }) => {
                 cart.items.map(item => (
                     <Item
                         key={item.id}
+                        id={item.id}
                         brand={item.brand}
                         model={item.model}
                         price={item.price}
                         imgURL={item.imgURL}
+                        removeFromCart={removeFromCart}
                     />
                 ))
             }
@@ -93,11 +96,19 @@ const ItemList = ({ cart }) => {
     )
 }
 
-const Item = ({ brand, model, price, imgURL }) => {
+const Item = ({ id, brand, model, price, imgURL, removeFromCart }) => {
+
+    const handleRemoveFromCart = () => {
+        removeFromCart({ id, price })
+    }
+
     return (
         <div
             className='bg-gray-700 p-5 rounded-lg'
         >
+            <button onClick={handleRemoveFromCart}>
+                Remove
+            </button>
             <div
                 className='relative flex gap-5'
             >
@@ -136,8 +147,10 @@ ItemList.propTypes = {
 }
 
 Item.propTypes = {
+    id: PropTypes.string.isRequired,
     brand: PropTypes.string.isRequired,
     model: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
-    imgURL: PropTypes.string.isRequired
+    imgURL: PropTypes.string.isRequired,
+    removeFromCart: PropTypes.func.isRequired
 }

@@ -42,9 +42,38 @@ export const CartProvider = ({ children }) => {
     console.log(`Added Item ${item.id} to cart`);
   };
 
+  const removeFromCart = (item) => {
+    const updatedCart = [...cart.items];
+    const existingItemIndex = updatedCart.findIndex((cartItem) => cartItem.id === item.id);
+
+    if (existingItemIndex !== -1) {
+      const updatedQuantity = updatedCart[existingItemIndex].quantity -= 1
+
+      if (updatedQuantity > 0) {
+        updatedCart[existingItemIndex].quantity = updatedQuantity
+
+      } else {
+        updatedCart.splice(existingItemIndex, 1)
+      }
+      
+      const updatedTotalItems = cart.totalItems - 1;
+      const updatedTotalPrice = cart.totalPrice - item.price;
+
+      setCart({
+        items: updatedCart,
+        totalItems: updatedTotalItems,
+        totalPrice: updatedTotalPrice,
+      });
+
+      console.log(`Item ${item.id} removed successfully`);
+    } else {
+      console.log(`Item ${item.id} not found in cart`);
+    }
+  }
+
 
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );
