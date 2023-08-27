@@ -87,6 +87,7 @@ const ItemList = ({ cart }) => {
                         brand={item.brand}
                         model={item.model}
                         price={item.price}
+                        quantity={item.quantity}
                         imgURL={item.imgURL}
                         removeFromCart={removeFromCart}
                     />
@@ -96,7 +97,7 @@ const ItemList = ({ cart }) => {
     )
 }
 
-const Item = ({ id, brand, model, price, imgURL, removeFromCart }) => {
+const Item = ({ id, brand, model, price, quantity, imgURL, removeFromCart }) => {
 
     const handleRemoveFromCart = () => {
         removeFromCart({ id, price })
@@ -106,32 +107,45 @@ const Item = ({ id, brand, model, price, imgURL, removeFromCart }) => {
         <div
             className='bg-gray-700 p-5 rounded-lg'
         >
-            <button onClick={handleRemoveFromCart}>
-                Remove
-            </button>
             <div
-                className='relative flex gap-5'
+                className='relative flex gap-5 items-center'
             >
+                <div className='absolute top-0 right-0 cursor-pointer'>
+                    <svg
+                    onClick={handleRemoveFromCart}
+                        fill='red'
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"><path
+                            d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+                        /></svg>
+                </div>
                 <div className='p-2 rounded-lg bg-white'>
                     <img
-                        className='h-w-28 w-28'
+                        className='w-28'
                         src={imgURL}
                         alt={model}
                         loading='lazy'
                     />
                 </div>
-                <div className='flex flex-col gap-1'>
-                    <p>
-                        {brand}
+                <div className='flex flex-col w-full gap-10'>
+                    <div>
+                        <p>
+                            {brand}
+                        </p>
+                        <p>
+                            {model}
+                        </p>
+                    </div>
+                <div className='flex justify-between right-0 left-0 bottom-0'>
+                    <p className='opacity-50'>
+                        <i>Quantity: {quantity}</i>
                     </p>
                     <p>
-                        {model}
+                        ${price}
                     </p>
                 </div>
-                <div className='absolute bottom-0 right-0'>
-                    <p>
-                        {price}
-                    </p>
                 </div>
             </div>
         </div>
@@ -151,6 +165,7 @@ Item.propTypes = {
     brand: PropTypes.string.isRequired,
     model: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
+    quantity: PropTypes.number.isRequired,
     imgURL: PropTypes.string.isRequired,
     removeFromCart: PropTypes.func.isRequired
 }
