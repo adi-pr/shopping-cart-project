@@ -13,7 +13,7 @@ const Navbar = ({ style }) => {
 
     return (
         <>
-            <nav id="navbar" className="fixed items-center justify-between flex w-full top-0 py-10 px-40 z-50" style={style}>
+            <nav id="navbar" className="fixed items-center justify-between flex w-full top-0 lg:py-10 lg:px-40 p-10 z-50" style={style}>
                 <div className="text-2xl">
                     <Link to="/">TechWare</Link>
                 </div>
