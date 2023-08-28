@@ -6,9 +6,9 @@ import './index.css'
 
 const StorePage = () => {
     return (
-        <div id="store" className="mt-32 grid ">
+        <div className="mt-32 flex absolute w-full">
             <Sidebar />
-            <div className="pt-8 pr-8 mb-8 flex flex-wrap justify-between gap-5">
+            <div className="pt-1 mb-8 flex flex-wrap gap-5 justify-center">
                 <ToastContainer />
                 <Outlet />
             </div>
