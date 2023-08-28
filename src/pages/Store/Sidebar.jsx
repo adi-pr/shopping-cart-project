@@ -4,7 +4,7 @@ const Sidebar = () => {
     return (
         <>
             <div className="lg:block hidden w-1/3">
-                <div className="flex p-8 ">
+                <div className="flex fixed p-8 ">
                     <ul className="flex flex-col gap-4 text-lg">
                         <Link to="cpus">
                             <li>CPU</li>
