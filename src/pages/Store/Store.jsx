@@ -8,7 +8,7 @@ const StorePage = () => {
     return (
         <div className="mt-32 flex absolute w-full">
             <Sidebar />
-            <div className="pt-1 mb-8 flex flex-wrap gap-5 justify-center">
+            <div className="my-5 flex flex-wrap gap-5 justify-center">
                 <ToastContainer />
                 <Outlet />
             </div>
