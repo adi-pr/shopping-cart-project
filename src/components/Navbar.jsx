@@ -14,17 +14,17 @@ const Navbar = ({ style }) => {
     return (
         <>
             <nav id="navbar" className="fixed items-center justify-between flex w-full top-0 lg:py-10 lg:px-40 p-10 z-50" style={style}>
-                <div className="text-2xl">
+                <div className="text-3xl">
                     <Link to="/">TechWare</Link>
                 </div>
-                <ul className="flex text-xl ml-auto">
-                    <li className="px-5">
+                <ul className="flex gap-5 text-xl ml-auto">
+                    <li>
                         <Link to="/store">Store</Link>
                     </li>
-                    <li className="px-5">
+                    <li>
                         <Link to="/about">About</Link>
                     </li>
-                    <li className="px-5">
+                    <li>
                         <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
