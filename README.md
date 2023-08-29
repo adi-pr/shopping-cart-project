@@ -10,3 +10,4 @@ Welcome to the Shopping Cart Project built with React! This project demonstrates
 - Update the quantity of items in the cart.
 - Remove items from the cart.
 - Calculate and display the total cost of items in the cart
+- Cart data will be saved even if the page is exited or refreshed
